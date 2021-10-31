@@ -4,21 +4,17 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	.main-menu ul li.megamenu .menu-wrapper {width:960px; right:4px}
-	
 }
 @media (min-width: 768px) and (max-width: 1200px) {
 	.img_list img{left:-25%;}
 	.cat-img {top:-50px;}
 	#top_header{width: 970px;}
-	#boxed {width:1000px;}
-	.header-video { height:500px !important;}
 }
 @media (max-width: 991px) {
 	.review_strip_single.last {border-bottom:1px solid #ddd; margin-bottom:20px;}
 	.price_home{float:none; margin-top:5px; display:block;}
 	header.sticky #top_header{padding-bottom:5px;}
 	#top_header{width: 740px; padding-bottom:5px;}
-	.header-video {height:475px !important;}
 }
 @media (min-width: 769px) and (max-width: 990px) {
 .intro_title_booking {margin-top:0;text-align:center;}
@@ -28,11 +24,8 @@
 #banner{width:400px;margin:auto;}
 .cat-img {top:0;}
 #hero_video .intro_title h1{font-size: 36px;}
-#boxed {width:100%;}
-.header-video {height:380px !important; overflow:hidden}
 }
 @media (max-width: 768px) {
-#boxed {width:100%;}
 #banner{width:400px;margin:auto;}
 .intro_title_booking {margin-top:0;text-align:center;}
 #booking_container {height: auto;padding:110px 0 70px 0;}
@@ -44,8 +37,7 @@
 .sub_header_content div h1:before,.sub_header_content div h1:after {width: 30px;}
 .cat-img {top:0;}
 .cmn-toggle-switch {right:35px;}
-.header-video {height:380px !important; overflow:hidden;}
-video {width: auto !important; height:100% !important;}
+
 }	
 
 /* Mobile Landscape */
@@ -158,12 +150,13 @@ header{padding: 0;}
 	display:block;
 	margin:15px;
 }
+
 .reveal-modal {width: 300px; margin-left: -140px; top: 8%;}
 }
 
 /* Mobile Landscape */
 @media (max-width: 480px) {
-.header-video {height:300px !important; overflow:hidden;}
+
 .intro_title_booking h1 {font-size: 22px;}
 .reveal-modal {width: 260px; margin-left: -130px; top:8%; }
 #banner{width:100%;}

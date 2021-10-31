@@ -45,7 +45,7 @@ if($(window).width() <= 480){
 	Common
 =============================================== */
 
-// <!-- Tooltip -->	
+<!-- Tooltip -->	
 $('.tooltip-1').tooltip({html:true});
 	
  //accordion	
@@ -104,7 +104,7 @@ var toggles = document.querySelectorAll(".cmn-toggle-switch");
 	});	
 });
 
-// <!-- testimonial carousel -->	
+<!-- testimonial carousel -->	
 $(document).ready(function() {
 	 'use strict';
   $('#quote-carousel').carousel({

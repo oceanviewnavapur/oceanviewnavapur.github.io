@@ -3,41 +3,53 @@
 // Jquery validate form booking form home
 jQuery(document).ready(function(){
 
-	$('#check_avail').submit(function(){
-	'use strict';
-		var action = $(this).attr('action');
+  $('#submit-booking').click(function(e) {
+    var checkIn = $('#check_in').val();
+    var checkOut = $('#check_out').val();
+    var adults = $('#adults').val();
+    var children = $('#children').val();
+    var name = $('#name_booking').val();
 
-		$("#message-booking").slideUp(750,function() {
-		$('#message-booking').hide();
+    if(checkIn || checkOut || adults || children || name) {
+      var text = encodeURIComponent('Name: ' + name + '\nCheck-in: ' + checkIn + ' \nCheck-out: ' + checkOut + '\nAdults: ' + adults + '\nChildren: ' + children);
+      $('#submit-booking').attr('href', 'https://api.whatsapp.com/send?phone=919356834086&text=' + text);
+    }
+  });
 
- 		$('#submit-booking')
-			.after('<i class="icon-spin4 animate-spin loader"></i>')
-			.attr('disabled','disabled');
+	// $('#check_avail').submit(function(){
+	// 'use strict';
+	// 	var action = $(this).attr('action');
+
+	// 	$("#message-booking").slideUp(750,function() {
+	// 	$('#message-booking').hide();
+
+ 	// 	$('#submit-booking')
+	// 		.after('<i class="icon-spin4 animate-spin loader"></i>')
 			
-		$.post(action, {
-			check_in: $('#check_in').val(),
-			check_out: $('#check_out').val(),
-			adults: $('#adults').val(),
-			children: $('#children').val(),
-			room_type: $('#room_type').val(),
-			name_booking: $('#name_booking').val(),
-			email_booking: $('#email_booking').val()
-		},
-			function(data){
-				document.getElementById('message-booking').innerHTML = data;
-				$('#message-booking').slideDown('slow');
-				$('#check_avail .loader').fadeOut('slow',function(){$(this).remove()});
-				$('#submit-booking').removeAttr('disabled');
-				if(data.match('success') != null) $('#check_avail').slideUp('slow');
+	// 	// $.post(action, {
+	// 	// 	check_in: $('#check_in').val(),
+	// 	// 	check_out: $('#check_out').val(),
+	// 	// 	adults: $('#adults').val(),
+	// 	// 	children: $('#children').val(),
+	// 	// 	room_type: $('#room_type').val(),
+	// 	// 	name_booking: $('#name_booking').val(),
+	// 	// 	email_booking: $('#email_booking').val()
+	// 	// },
+	// 	// 	function(data){
+	// 	// 		document.getElementById('message-booking').innerHTML = data;
+	// 	// 		$('#message-booking').slideDown('slow');
+	// 	// 		$('#check_avail .loader').fadeOut('slow',function(){$(this).remove()});
+	// 	// 		$('#submit-booking').removeAttr('disabled');
+	// 	// 		if(data.match('success') != null) $('#check_avail').slideUp('slow');
 
-			}
-		);
+	// 	// 	}
+	// 	// );
 
-		});
+	// 	});
 
-		return false;
+	// 	return false;
 
-	});
+	// });
 });
 
 /// Jquery validate newsletter

@@ -1,13 +1,13 @@
 		//set up markers 
 		var myMarkers = {"markers": [
-				{"latitude": "51.511732", "longitude":"-0.123270", "icon": "img/map-marker2.png"}
+				{"latitude": "19.4409781", "longitude":"72.751992", "icon": "img/map-marker2.png"}
 			]
 		};
 		
 		//set up map options
 		$("#map").mapmarker({
 			zoom	: 14,
-			center	: 'Covent Garden London',
+			center	: 'oceanview beach house and cafe',
 			markers	: myMarkers
 		});
 	
