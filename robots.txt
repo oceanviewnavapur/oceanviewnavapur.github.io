@@ -1,0 +1,8 @@
+User-agent: * 
+Disallow:
+Disallow: assets
+Disallow: css
+Disallow: js
+Disallow: rs-plugin
+Disallow: site_launch
+Sitemap: https://oceanviewstay.in/sitemap.xml
