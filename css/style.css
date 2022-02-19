@@ -1091,6 +1091,9 @@ ul.list_ok li:before {
 .sub_header#bg_room{
 	background-image: url(../img/tea-bed.jpeg);
 }
+.sub_header#bg_terms{
+	background-image: url(../img/terms-of-service.png);
+}
 .sub_header_content{
    display: table;
    width:100%;
