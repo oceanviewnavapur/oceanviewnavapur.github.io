@@ -125,8 +125,8 @@
     <div class="container margin_60">
         <div class="row">
             <div class="col-lg-8 col-md-8">
-              <video autoplay muted loop class="img-responsive styled nopadding" style="position: relative;">
-                <source src="video/beach-haldi.mp4" type="video/mp4">
+              <video id="wedding-video" muted loop class="img-responsive styled nopadding" style="position: relative;">
+                <source src="video/beach-haldi.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               <h3>Seamless Destination Wedding Experience</h3>
@@ -310,7 +310,14 @@
 <script src="assets/validate.js"></script>
 <script src="js/quantity-bt.js"></script>
 <script src="js/bootstrap-datepicker.js"></script>
-<script>$('input.date-pick').datepicker();</script>
+
+<script>
+  window.onload = function() {
+    $('input.date-pick').datepicker();
+      var video = document.getElementById("wedding-video");
+      video.play();
+  };
+</script>
 
 </body>
 </html>
