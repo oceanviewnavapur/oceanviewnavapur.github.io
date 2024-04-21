@@ -8,10 +8,11 @@ jQuery(document).ready(function(){
     var checkOut = $('#check_out').val();
     var adults = $('#adults').val();
     var children = $('#children').val();
+    var room_cat = $('#room_cat').val();
     var name = $('#name_booking').val();
 
     if(checkIn || checkOut || adults || children || name) {
-      var text = encodeURIComponent('Name: ' + name + '\nCheck-in: ' + checkIn + ' \nCheck-out: ' + checkOut + '\nAdults: ' + adults + '\nChildren: ' + children);
+      var text = encodeURIComponent('Name: ' + name + '\nRoom: ' + room_cat + ' \nCheck-in: ' + checkIn + ' \nCheck-out: ' + checkOut + '\nAdults: ' + adults + '\nChildren: ' + children);
       $('#submit-booking').attr('href', 'https://api.whatsapp.com/send?phone=919356834086&text=' + text);
     }
   });
