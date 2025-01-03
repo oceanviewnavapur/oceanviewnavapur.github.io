@@ -11,7 +11,7 @@
 
             // Check if a specific query parameter exists (e.g., 'redirect')
             if (params.has('amt')) {
-                window.location.href = 'upi://pay?pa=8888833447@pthdfc&cu=INR&am=' + +amt;
+                window.location.href = 'upi://pay?pa=8888833447@pthdfc&cu=INR&am=' + +params.get('amt');
             }
         };
     </script>
