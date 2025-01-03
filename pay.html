@@ -1,7 +1,21 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oceanview payment link</title>
-    <meta http-equiv="refresh" content="0; url=http://example.com/" />
-  </head>
-  <body></body>
+    <script>
+        window.onload = function () {
+            // Parse the query string from the URL
+            const params = new URLSearchParams(window.location.search);
+
+            // Check if a specific query parameter exists (e.g., 'redirect')
+            if (params.has('amt')) {
+                window.location.href = 'upi://pay?pa=8888833447@pthdfc&cu=INR&am=' + +amt;
+            }
+        };
+    </script>
+</head>
+<body>
+</body>
 </html>
